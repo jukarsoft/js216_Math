@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eval</title>
+
+	<script type="text/javascript">
+		
+		a=6
+		b='*'
+		c=2
+		document.write(a+b+c + '<br>')  //→ mostrará 6*2
+		document.write(eval(a+b+c) + '<br>') //→ mostrará el valor de la multiplicación: 12
+		
+		// Convertir a número con decimales→ parseFloat('num')
+		var texto1 = '1234.56';
+		var numFloat=parseFloat(texto1);
+		document.write('total Float: ' + texto1 + (numFloat*2) + '<br>')
+
+		// Convertir a número sin decimales→ parseInt('num')
+		var texto2 = '12.55';
+		var numInt=parseInt(texto2);
+		document.write('total Int : ' + texto2  + (numInt*2) + '<br>')
+		
+		// Evaluar si una expresión es numérico→ isNaN('num')
+		if (isNaN(texto1)) {
+			document.write('yes-numeric' +  '<br>');
+		} else { 
+				document.write('Not numeric' + '<br>');
+		}
+		  
+		// Número entero más cercano superior→ Math.ceil(num)
+		document.write('Numero superior a  ' + numFloat  + ' --> ' + Math.ceil(numFloat)  + '<br>');
+
+		//Número entero más cercano inferior→ Math.floor(num)
+		document.write('Numero inferior a  ' + numFloat  + ' --> ' + Math.floor(numFloat)  + '<br>');
+
+		//Devuelve el mayor valor de los especificados→ Math.max(n1,n2,..)
+		document.write('devuelve mayor  ' + numFloat  + '  --> ' + Math.floor(numFloat)  + '<br>');
+
+
+
+		/*
+
+
+Devuelve el menor valor de los especificados→ Math.min(n1,n2,...)
+Devuelve el entero más cercano→ Math.round(num)
+Calcula la potencia de un número→ Math.pow(n1,n2)
+Raiz cuadrada de un número→ Math.sqrt(num)
+Genera un número aleatorio entre 0 y 1→ Math.random()
+*/
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
